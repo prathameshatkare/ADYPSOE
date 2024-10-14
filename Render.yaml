@@ -1,0 +1,9 @@
+version: 1
+services:
+  - type: web
+    name: your-app-name
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "./start.sh"
+    autoDeploy: true
+    region: oregon
